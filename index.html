@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="https://kit.fontawesome.com/8147c50b66.js" crossorigin="anonymous"></script>
+    <title>BookShelf</title>
+  </head>
+  <body>
+    <header>
+      <h1>BookShelf</h1>
+    </header>
+    <main>
+      <div class="container fixed-pb">
+        <div class="header-container">
+          <h2>Books Collection</h2>
+          <div class="search-box">
+            <form action="" id="search-form">
+              <button title="home" class="refresh" id="home-button"><i class="fa-sharp fa-solid fa-house fa-xl"></i></button>
+              <button title="add" class="refresh" id="refresh-button"><i class="fa-solid fa-plus fa-xl"></i></button>
+              <input type="text" name="search" id="search" />
+              <button title="Search book by year" type="submit" id="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+          </div>
+        </div>
+
+        <div class="books">
+          <div class="input-form display-none">
+            <form id="add-book-form">
+              <div class="form-control">
+                <label for="book-title">Title</label>
+                <input type="text" name="book-title" id="book-title" placeholder="Book Title" required />
+              </div>
+
+              <div class="form-control">
+                <label for="book-writer">Writer</label>
+                <input type="text" name="book-writer" id="book-writer" placeholder="Book Writer" required />
+              </div>
+
+              <div class="form-control">
+                <label for="book-year">Year</label>
+                <input type="text" name="book-year" id="book-year" placeholder="Book Year" required />
+              </div>
+
+              <input type="submit" value="Save book" class="button-add" id="submit-btn" />
+            </form>
+          </div>
+
+          <div class="books-list">
+            <div class="header-list"><h2>Unfinished Books</h2></div>
+            <ul class="list" id="unfinished-books"></ul>
+          </div>
+
+          <div class="books-list second">
+            <div class="header-list"><h2>Finished Books</h2></div>
+            <ul class="list" id="finished-books"></ul>
+          </div>
+        </div>
+
+        <div class="search-results display-none">
+          <div class="books-list w-100">
+            <div class="header-list"><h2>Result :</h2></div>
+            <ul class="list" id="result"></ul>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

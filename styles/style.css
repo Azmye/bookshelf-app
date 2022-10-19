@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  background-color: #fff;
+  font-family: 'Roboto', sans-serif;
+}
+
+/** **/
+
+header {
+  background-color: orange;
+  padding: 20px;
+  color: #fff;
+  box-shadow: 0 4px 12px 0 #ddd;
+  text-align: center;
+}
+
+.container {
+  width: 900px;
+  margin: auto;
+  margin-top: 20px;
+  background-color: #ddd;
+  box-shadow: 0 4px 8px 0 #ddd;
+  border-radius: 10px;
+  position: relative;
+  padding-bottom: 65px;
+}
+
+.display-none {
+  display: none !important;
+}
+
+.fixed-pb {
+  padding-bottom: 20px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: #ffb13c;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  color: #fff;
+  border-bottom: 5px solid #fff;
+}
+
+.header-container h2 {
+  margin: auto 0;
+}
+
+.search-box {
+  background-color: #fff;
+  margin: auto 0;
+}
+
+.refresh {
+  background-color: #ffb13c;
+  padding: 10px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.refresh:hover {
+  color: #000;
+}
+
+.search-box #search-button {
+  padding: 10px 15px;
+  border: 0;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.search-box #search-button:hover {
+  background-color: #006be6;
+  color: #fff;
+}
+
+.search-box input[type='text'] {
+  border: none;
+  color: #ffb13c;
+  font-size: 14px;
+}
+
+.search-box input[type='text']:focus {
+  outline: none;
+}
+
+.books {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  padding-bottom: 0;
+}
+
+.header-list {
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 #ddd;
+  padding: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  color: #ffb13c;
+}
+
+.books-list {
+  background-color: #fff;
+  width: 50%;
+  border-radius: 10px;
+}
+
+.list {
+  padding: 10px;
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.item {
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 #ddd;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.button-items {
+  margin-top: 5px;
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: row;
+}
+
+.button-items button {
+  width: 50%;
+  border: none;
+  padding: 3px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.button-items button:hover {
+  box-shadow: 0 4px 12px 0 #ddd;
+  color: #000;
+}
+
+.undo {
+  background-color: #00942c;
+  color: #fff;
+}
+
+.remove {
+  background-color: #ff0000;
+  color: #fff;
+}
+
+.item h4 {
+  color: #006be6;
+}
+
+.item p {
+  color: #00942c;
+}
+
+.item .bookYear {
+  color: #ff0000;
+}
+
+.item span {
+  color: #000;
+}
+
+.input-form {
+  width: 100%;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.form-control input[type='text'] {
+  font-size: 16px;
+  padding: 10px 5px;
+  border: 0;
+  border-radius: 10px;
+}
+
+.form-control input[type='text']:focus {
+  outline: 2px solid #ffb13c;
+}
+
+.input-form input[type='submit'] {
+  padding: 10px;
+  width: 100%;
+  border: 0;
+  margin-top: 5px;
+  border-radius: 10px;
+  background-color: #00942c;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+}
+
+.input-form input[type='submit']:hover {
+  background-color: #00af35;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.search-results {
+  padding: 20px;
+  padding-bottom: 0;
+}
+
+.search-results .button-items {
+  display: none;
+}
